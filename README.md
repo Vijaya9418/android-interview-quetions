@@ -46,6 +46,19 @@
    Explicit intent:- Whhich is basically use to interact with inner part of the application. for example if you want to send the data from one activity to another within the      application or you want to go from one activity to another, explicit intents are used.
 
    Implicit intent:- It is used to interact with outer part of the application. For example if we want to open a phone dial with from our application.or if you want to share      an image from your application.
+
+6. Define activity Lifecycle:-
+   It is several events or stages with which an activity goes through in an application. Activity lifecycle is consits of seven stages.:-
+
+   1. OnCreate:-It is the very first stage where the activity is created.
+   2. OnStart:- It is the second stage where the activity starts, when the activity becomes visible to the user.
+   3. OnResume:- It is called when the activity is about to start interacting with the users.
+   4. OnPause:- It is called when the activity is about to loose focus.
+   5. OnStop:- It is called when the acitivity is no longer visible to the user, but there in the background.
+   6. OnRestart:- It is called when the activity is restarted after being stopped.
+   7. OnDestroy :- It is called when the activity is removed from the background.
+  
+      
    
 
    
