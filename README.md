@@ -129,6 +129,7 @@
     onDetach(): This method is called when the fragment is detached from its hosting activity.<br>
 
 14. What is the lifecycle of Service?
+
     onCreate(): This method is called when the service is first created.<br>
     onStartCommand(): This method is called when a client calls startService() to start the service.<br>
     onBind(): This method is called when a client calls bindService() to bind to the service.<br>
@@ -137,9 +138,42 @@
     onDestroy(): This method is called when the service is about to be destroyed.<br>
 
 15. A service that was initially started with onStartCommand by a calling startService can still receive a call to _____. when a client calls bindService.
+
     The onBind() method allows clients to bind to the service and communicate with it through an interface defined by an IBinder. By implementing onBind(), the service 
     provides a way for clients to access its functionality and establish a connection with it.
-    So, even if a service is started with startService(), clients can still bind to it using bindService() and interact with it through the returned IBinder object. 
+    So, even if a service is started with startService(), clients can still bind to it using bindService() and interact with it through the returned IBinder object.
+
+16. What is anr?
+    
+    ANR is application not responding which is an error condition that occurs when the user interface of an application becomes unresponsive and user is not able to
+    interact with it. When an ANR occurs, the system displays a dialog to the user, notifying them that the application has stopped responding and giving them the option to       close it.<br>
+    It can be caused by long running tasks in the main thread, deadlocks, excessive CPU or memory usage.
+
+17. What is a Deadlock?
+
+    A deadklock occurs when multiple thread wait for other threads to release their resources, resulting in the deadlock state where none of them can proceed.
+
+18. What is bundle?
+    
+    A bundle is acontainer that holds the key-value pairs, similar to dictionary or map. It is commonly used for passing data between different components, within
+    application such as between fragment and activity.
+
+19. what is Context in android?
+    
+    A Context is an essential class in android that provides access to various resources and system level operations within the application. It repeasents the current state
+    and environment in which the application is running.Context is typically obtained from the Android framework and is passed to different components, such as activities,        services, and broadcast receivers, to access system resources and perform operations.
+
+20. what are the types of context?
+    
+    1. Application context:- It is associated with entire life cycle of the application, which can be called useing getApplicationContext(), It should be used wherever
+       the context is not tightly coupled to any specific conponent such as activity, service etc.
+    2. Activity Lifecycle:- It is specific to particular activity and tied to the lifecycle of that service.It can be acessed within the activity using this keyword.
+       The Activity Context should be used when you need a Context that is closely related to the current activity, such as creating views, inflating layouts etc.
+    3.Service context:-The Service Context is specific to a particular service and is tied to the lifecycle of that service.It can be accessed within a service using the this       keyword or ServiceName.this.The Service Context should be used when you need a Context that is closely related to the current service, such as accessing service-              specific resources, starting new activities, or accessing service-related services.
+
+21. What is manifest?
+
+    A manifest file is an essential file that provides an important information about your application. It contains various key components such as service and the permission      which your app needs, launching configuration of your app, package name, intent filter etc.
       
   
       
