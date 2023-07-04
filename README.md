@@ -134,7 +134,12 @@
     onBind(): This method is called when a client calls bindService() to bind to the service.<br>
     onUnbind(): This method is called when all clients have disconnected from the service by calling unbindService().<br>
     onRebind(): This method is called when a new client binds to the service after onUnbind() has been called.<br>
-    onDestroy(): This method is called when the service is about to be destroyed.<br> 
+    onDestroy(): This method is called when the service is about to be destroyed.<br>
+
+15. A service that was initially started with onStartCommand by a calling startService can still receive a call to _____. when a client calls bindService.
+    The onBind() method allows clients to bind to the service and communicate with it through an interface defined by an IBinder. By implementing onBind(), the service 
+    provides a way for clients to access its functionality and establish a connection with it.
+    So, even if a service is started with startService(), clients can still bind to it using bindService() and interact with it through the returned IBinder object. 
       
   
       
