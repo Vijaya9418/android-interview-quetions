@@ -116,25 +116,25 @@
     Fragments:- It is modular and reuseable UI component in android that represents a piece of activity. It is designed for building responsive user interface, it has its own    lifecyle , layout, views etc.
     
     Fragment lifecycle are as follows:-
-    onAttach(): This method is called when the fragment is associated with its hosting activity.
-    onCreate(): This method is called when the fragment is created.
-    onCreateView(): This method is called to create the fragment's user interface, typically by inflating a layout resource or dynamically creating UI components.
-    onViewCreated(): This method is called after onCreateView() and allows you to perform additional UI setup or access the inflated view hierarchy.
-    onStart(): This method is called when the fragment becomes visible to the user.
-    onResume(): This method is called when the fragment is about to start interacting with the user.
-    onPause(): This method is called when the fragment is about to lose focus or be partially obscured.
-    onStop(): This method is called when the fragment is no longer visible to the user.
-    onDestroyView(): This method is called when the fragment's view is being destroyed.
-    onDestroy(): This method is called when the fragment is being destroyed.
-    onDetach(): This method is called when the fragment is detached from its hosting activity.
+    onAttach(): This method is called when the fragment is associated with its hosting activity.<br>
+    onCreate(): This method is called when the fragment is created.<br>
+    onCreateView(): This method is called to create the fragment's user interface, typically by inflating a layout resource or dynamically creating UI components.<br>
+    onViewCreated(): This method is called after onCreateView() and allows you to perform additional UI setup or access the inflated view hierarchy.<br>
+    onStart(): This method is called when the fragment becomes visible to the user.<br>
+    onResume(): This method is called when the fragment is about to start interacting with the user.<br>
+    onPause(): This method is called when the fragment is about to lose focus or be partially obscured.<br>
+    onStop(): This method is called when the fragment is no longer visible to the user.<br>
+    onDestroyView(): This method is called when the fragment's view is being destroyed.<br>
+    onDestroy(): This method is called when the fragment is being destroyed.<br>
+    onDetach(): This method is called when the fragment is detached from its hosting activity.<br>
 
 14. What is the lifecycle of Service?
-    onCreate(): This method is called when the service is first created.
-    onStartCommand(): This method is called when a client calls startService() to start the service.
-    onBind(): This method is called when a client calls bindService() to bind to the service.
-    onUnbind(): This method is called when all clients have disconnected from the service by calling unbindService().
-    onRebind(): This method is called when a new client binds to the service after onUnbind() has been called.
-    onDestroy(): This method is called when the service is about to be destroyed. 
+    onCreate(): This method is called when the service is first created.<br>
+    onStartCommand(): This method is called when a client calls startService() to start the service.<br>
+    onBind(): This method is called when a client calls bindService() to bind to the service.<br>
+    onUnbind(): This method is called when all clients have disconnected from the service by calling unbindService().<br>
+    onRebind(): This method is called when a new client binds to the service after onUnbind() has been called.<br>
+    onDestroy(): This method is called when the service is about to be destroyed.<br> 
       
   
       
