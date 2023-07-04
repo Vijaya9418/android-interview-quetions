@@ -58,6 +58,23 @@
    6. OnRestart:- It is called when the activity is restarted after being stopped.
    7. OnDestroy :- It is called when the activity is removed from the background.
   
+7. What are OOPs concept?
+   Object oriented programming is a software design pattern that is revlovs abround object and classes which provides the reuseability, readability to improve the performance.
+   It sits on four pillars, which are :-
+   
+   Inheritance:- It is the ability of a class to inherit the property of its parent class.for example:- a child can inherit the property of parents.
+   
+   Abstract:- It is used to hide most of the information and to show only the relevant information to the user. for example:- ATM.
+   
+   Encapsulation:- It is the process of bundling the data(attribute) and methods(behaviour) together and get the full access through them with the help of access modifier         public, protected and private. We also use getter and setters which helps in data hiding and maintaining the inetrgrity of the data.
+   
+   PolyMorphism:- It comprises of two words poly means many and morphism means form, so it is the ability of an objcet to take multiple forms, which we can achieve by             overloading and overrriding.
+
+8. Define overloading and overriding?
+   Overloading:- It is also called run time polymorphism in which meathod have same name , but differ in parameters. It can be differ in the number of params or the type of params.
+   Overriding:- It is also called compile time polymorphism in which a sub class has the same method name as that of the super class, but the implementation is differnt.
+   
+  
       
    
 
