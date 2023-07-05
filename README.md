@@ -193,8 +193,77 @@
     Interface:-<br>
     An interface in java is a collection of abstarct methods and constand variables.It defines a contract or rule of how a clss should behave.
     It serves a way to acheive multiple inheritance as in java a class can implement multiple interface.
-    All methods in an interface are public and abstract by default. 
-      
+    All methods in an interface are public and abstract by default.
+
+    Differences:
+    
+    Implementation: A class can extend only one abstract class, but it can implement multiple interfaces.
+    Abstract classes can have both abstract and non-abstract methods with complete implementations. Interfaces can only have abstract methods.
+    Access Modifiers: Abstract class methods can have different access modifiers (public, private, protected), while interface methods are implicitly public.
+    Variables: Abstract classes can have member variables, while interfaces can only have constant variables (static final variables).
+
+24. Collections in java?
+
+   In java, Collection framework provides a set of classes and interface for working with group of objects.It provides basic operations like adding, removing and queuing of elements.
+
+25. What is an exception?
+    An exception is an event that occurs during the execution of a program that disrupts the original flow of a program.Exceptions are use to handle, errors,              exception conditions. The java language provides build-in handling exception mechanism to deal with this type of situation.<br>
+    
+    Exception Hierarchy:
+      Exceptions in Java are organized in a hierarchical structure, with the base class being java.lang.Throwable.
+      Throwable has two main subclasses: Exception and Error.
+
+    Exception Handling:
+
+      Exception handling is the process of catching and handling exceptions to prevent program termination and provide meaningful feedback to the user.
+      The try-catch-finally block is used to handle exceptions. The try block contains the code that may throw an exception, the catch block catches and handles the         exception, and the finally block is executed regardless of whether an exception occurs or not.
+
+26. Sort the list of elements using bubble sort?
+    import java.util.ArrayList;
+
+    public class arrayList{
+       pulic static void main(String []args)
+          {
+    ArrayList<integer> number = new ArrayList<>();
+     number.add(1);
+     number.add(2);
+     number.add(3);
+     number.add(4);
+     number.add(5);
+
+    System.out.printlin("before swapping" + number);
+
+    bubbleSort(numbers);
+
+     System.out.printlin("after swapping" + number);
+    }
+
+    public static void bubbleSort( ArrayList<integer> list)
+    {
+    int n = list.size();
+    boolean swapped;
+
+    for(int i =0; i< n-1; i++)
+    {
+    swapped = false;
+    For(int j = 0; j<n-i-1; j++)
+    {
+    if(list.get(j) > list.get(j+1))
+    {
+    //swap the elements
+    int temp = list.get(j);
+    list.set(j, list.get(j+1));
+    list.set(j+1, temp)
+
+    swapped = true;
+    }
+    }
+    }
+    }
+    }
+
+27.   
+    
   
       
    
