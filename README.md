@@ -169,11 +169,31 @@
        the context is not tightly coupled to any specific conponent such as activity, service etc.
     2. Activity Lifecycle:- It is specific to particular activity and tied to the lifecycle of that service.It can be acessed within the activity using this keyword.
        The Activity Context should be used when you need a Context that is closely related to the current activity, such as creating views, inflating layouts etc.
-    3.Service context:-The Service Context is specific to a particular service and is tied to the lifecycle of that service.It can be accessed within a service using the this       keyword or ServiceName.this.The Service Context should be used when you need a Context that is closely related to the current service, such as accessing service-              specific resources, starting new activities, or accessing service-related services.
+    3.Service context:-The Service Context is specific to a particular service and is tied to the lifecycle of that service.It can be accessed within a service using the this keyword or ServiceName.this.The Service Context should be used when you need a Context that is closely related to the current service, such as accessing service-specific resources, starting new activities, or accessing service-related services.
 
 21. What is manifest?
 
-    A manifest file is an essential file that provides an important information about your application. It contains various key components such as service and the permission      which your app needs, launching configuration of your app, package name, intent filter etc.
+    A manifest file is an essential file that provides an important information about your application. It contains various key components such as service and the permission which your app needs, launching configuration of your app, package name, intent filter etc.
+
+22. What is adb?
+
+    ADB(Android Debug Bridge) it is a command-line tool which helps to communicate between your computer and android emulator or device. It is a part of SDK(Software Development kit) used for mainly debugging and testing the android devices.
+    1. Debugging and Logging:
+    2. Application Installation and Management:
+    3. File Transfer:
+
+23. Difference between abstract and Interface?
+
+    Abstract:-<br>
+    An abstract class in java cannot be instantiated , it means we cannot create the object directly from it.
+    It can contain both abstract and not abstract methods. Abstarct methods are declared without an implementation and must be implemented by its subclass.
+    Subclasses of an abstract class must either implement all the abstract methods or be declared as abstract themselves.
+
+
+    Interface:-<br>
+    An interface in java is a collection of abstarct methods and constand variables.It defines a contract or rule of how a clss should behave.
+    It serves a way to acheive multiple inheritance as in java a class can implement multiple interface.
+    All methods in an interface are public and abstract by default. 
       
   
       
