@@ -300,7 +300,28 @@
      View: Displays the user interface and interacts with the user.
      Controller: Handles user input, manipulates the model, and updates the view.
      The controller acts as an intermediary between the model and the view, facilitating communication and ensuring separation of concerns. When a user interacts           with the view, the controller handles the input, updates the model if necessary, and updates the view accordingly.
+    
+32. What is MVP?
 
+   Model-View-Presenter (MVP) Pattern in Android:
+   The MVP pattern is another software architectural pattern used in Android development. It is an evolution of the MVC pattern and aims to separate the presentation     layer from the model and the view.
+   Model: Represents the data and business logic of the application.
+   View: Displays the user interface and notifies the presenter about user actions.
+   Presenter: Acts as an intermediary between the model and the view, handles user actions, updates the view, and manipulates the model.
+
+33. What is MVVM?
+
+    Model-View-ViewModel (MVVM) Pattern in Android:
+    The MVVM pattern is a design pattern that separates the user interface (View) from the application logic and data (Model) using a ViewModel as an intermediary.
+    Model: Represents the data and business logic of the application.
+    View: Displays the user interface and notifies the ViewModel about user actions through data binding or event handling.
+    ViewModel: Exposes data and commands to the view, interacts with the model, and performs any necessary transformations or data manipulations.
+
+34. What is Gradle in android?
+
+    A gradle is a automated tool used in android development. It provides a flexible and automated tooling system for compiling the code, updating                         dependencies,running tasks, generating apks.Gradle uses Groovy or Kotlin as its scripting language and offers extensive customization options.
+    
+   
     
     
     
