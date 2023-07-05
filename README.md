@@ -272,7 +272,12 @@
 28. What are the different storage options available in Android?
 
     There are several ways to store data locally in an Android application.
+    
     1. Shared Preferences:- This is a lightweight storage option for small amounts of key-value pairs. It is commonly used for storing application settings, user preferences, or simple configuration data.
+    2. Internal Storage: Each Android application has its private internal storage directory. You can use this storage to save private files that are only accessible by your application.
+    3. External Storage: Android devices often have external storage options like an SD card. You can use this storage to store files that can be accessed by other applications or the user.
+    4. Room Persistence Library: Room is a powerful persistence library provided by Android Jetpack. It is built on top of SQLite and provides an abstraction layer to work with databases.
+    5. SQLite Database: SQLite is a lightweight relational database that is included in the Android framework. It provides a structured and efficient way to store and retrieve structured data. 
     
     
   
