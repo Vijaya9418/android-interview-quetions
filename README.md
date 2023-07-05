@@ -303,24 +303,43 @@
     
 32. What is MVP?
 
-   Model-View-Presenter (MVP) Pattern in Android:
-   The MVP pattern is another software architectural pattern used in Android development. It is an evolution of the MVC pattern and aims to separate the presentation     layer from the model and the view.
-   Model: Represents the data and business logic of the application.
-   View: Displays the user interface and notifies the presenter about user actions.
-   Presenter: Acts as an intermediary between the model and the view, handles user actions, updates the view, and manipulates the model.
+   Model-View-Presenter (MVP) Pattern in Android:<br>
+   The MVP pattern is another software architectural pattern used in Android development. It is an evolution of the MVC pattern and aims to separate the presentation     layer from the model and the view.<br>
+   Model: Represents the data and business logic of the application.<br>
+   View: Displays the user interface and notifies the presenter about user actions.<br>
+   Presenter: Acts as an intermediary between the model and the view, handles user actions, updates the view, and manipulates the model.<br>
 
 33. What is MVVM?
 
-    Model-View-ViewModel (MVVM) Pattern in Android:
-    The MVVM pattern is a design pattern that separates the user interface (View) from the application logic and data (Model) using a ViewModel as an intermediary.
-    Model: Represents the data and business logic of the application.
-    View: Displays the user interface and notifies the ViewModel about user actions through data binding or event handling.
-    ViewModel: Exposes data and commands to the view, interacts with the model, and performs any necessary transformations or data manipulations.
+    Model-View-ViewModel (MVVM) Pattern in Android:<br>
+    The MVVM pattern is a design pattern that separates the user interface (View) from the application logic and data (Model) using a ViewModel as an intermediary.<br>
+    Model: Represents the data and business logic of the application.<br>
+    View: Displays the user interface and notifies the ViewModel about user actions through data binding or event handling.<br>
+    ViewModel: Exposes data and commands to the view, interacts with the model, and performs any necessary transformations or data manipulations.<br>
 
 34. What is Gradle in android?
 
     A gradle is a automated tool used in android development. It provides a flexible and automated tooling system for compiling the code, updating                         dependencies,running tasks, generating apks.Gradle uses Groovy or Kotlin as its scripting language and offers extensive customization options.
+
+
+35. What is Jetpack and Jetpack Compose?
     
+    Jetpack:- It is a collect of librabries tools and guidelines provided by google for the android app development.It aims to simplify and accelerate android app development by offering the set of components , API that address the common challanges faced by developer.
+
+    JetpackCompose:- It is a recommended mordern toolkit for developing the native UI for android app development provided by google . It allows developer to create user Interface by directly writing the reactive programming, in which we can write our UI hirearchy by defining vartous composable function which makes it easy to develop UI.
+
+36. What is FastLane?
+    
+    Fastlane is a set of tools that automates various tasks in the mobile app development cycle.It simplifies the processes such as building, testing, deploying the iOS/android apps. It provides the command line interface to define and execute our commands. Making it easier to handle tasks such as  like building app releases, running tests, and submitting apps to app stores.
+
+37. What is RxJava?
+    In Android development, RxJava can be used to simplify handling asynchronous tasks such as network requests, database operations, and UI events. It provides a set of operators that allow you to transform, filter, and combine data streams, making it easier to handle complex asynchronous scenarios.<br>
+
+It provides a reactive programming paradigm that enables developers to handle asynchronous operations and data streams in a more declarative and composable way.
+
+38. What is a Room Database?
+    
+   Room is a lightweight relational database commonly used in Android app development. that provides the abstarct layer over SQLite and compile time checks,support for LiveData and RxJava for reactive programming, and easy integration with other Jetpack components like LiveData and ViewModel.It combines the benefits of SQLite, such as efficient storage and performance, with an easier-to-use interface for developers.
    
     
     
