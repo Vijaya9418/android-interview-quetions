@@ -269,7 +269,11 @@
 }
 
 
-28.   
+28. What are the different storage options available in Android?
+
+    There are several ways to store data locally in an Android application.
+    1. Shared Preferences:- This is a lightweight storage option for small amounts of key-value pairs. It is commonly used for storing application settings, user preferences, or simple configuration data.
+    
     
   
       
