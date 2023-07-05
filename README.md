@@ -277,7 +277,31 @@
     2. Internal Storage: Each Android application has its private internal storage directory. You can use this storage to save private files that are only accessible by your application.
     3. External Storage: Android devices often have external storage options like an SD card. You can use this storage to store files that can be accessed by other applications or the user.
     4. Room Persistence Library: Room is a powerful persistence library provided by Android Jetpack. It is built on top of SQLite and provides an abstraction layer to work with databases.
-    5. SQLite Database: SQLite is a lightweight relational database that is included in the Android framework. It provides a structured and efficient way to store and retrieve structured data. 
+    5. SQLite Database: SQLite is a lightweight relational database that is included in the Android framework. It provides a structured and efficient way to store and retrieve structured data.
+   
+29. Dependency Inject using koin?
+    
+    Dependency injection is a design pattern that provides the dependency which are required by classes and object, instead of letting them create their own, which helps to make them loosly coupled and leads to improve the code readability and testebility. As creating the stubs and mocks for testing is easy with dependency injection.<br>
+    Koin is a lightweight DI framework for Kotlin that simplifies dependency injection in Android applications.<br>
+    Define Dependency :- In koin dependency are registered through module which is a logical group of dependencies. for example:- we can define a dependency through network related, UI component or database.<br>
+    Register dependencies: Within the module, register the dependencies using the single or factory functions. For example, you can register OkHttpClient as a singleton and Retrofit as a factory.
+    Inject dependencies: In your class, declare the dependencies as constructor parameters. Koin will automatically inject the dependencies based on the registered components.
+
+30. Explain the differences between Serializable and Parcelable interfaces in Android?
+
+    Serializable interface: It is a standard Java interface used to serialize an object's state into a byte stream. It is relatively easy to implement but can be          slower and less efficient compared to Parcelable.<br>
+
+   Parcelable interface: It is an Android-specific interface used to serialize an object for efficient IPC (Inter-Process Communication) and is optimized for             performance. It requires a bit more effort to implement but offers better performance.
+
+31. What is the Model-View-Controller (MVC) pattern in Android? How does it work?
+
+     The MVC pattern is a software architectural pattern that separates an application into three main components: Model, View, and Controller.
+     Model: Represents the data and business logic of the application.
+     View: Displays the user interface and interacts with the user.
+     Controller: Handles user input, manipulates the model, and updates the view.
+     The controller acts as an intermediary between the model and the view, facilitating communication and ensuring separation of concerns. When a user interacts           with the view, the controller handles the input, updates the model if necessary, and updates the view accordingly.
+
+    
     
     
   
