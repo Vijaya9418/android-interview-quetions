@@ -219,50 +219,57 @@
       The try-catch-finally block is used to handle exceptions. The try block contains the code that may throw an exception, the catch block catches and handles the         exception, and the finally block is executed regardless of whether an exception occurs or not.
 
 26. Sort the list of elements using bubble sort?
+    
     import java.util.ArrayList;
 
-    public class arrayList{
-       pulic static void main(String []args)
-          {
-    ArrayList<integer> number = new ArrayList<>();
-     number.add(1);
-     number.add(2);
-     number.add(3);
-     number.add(4);
-     number.add(5);
+    public class ArrayListSortingExample {
 
-    System.out.printlin("before swapping" + number);
+    public static void main(String[] args) {
+    
+        // Create an ArrayList of integers
+        ArrayList<Integer> numbers = new ArrayList<>();
 
-    bubbleSort(numbers);
+        // Add elements to the ArrayList
+        numbers.add(5);
+        numbers.add(2);
+        numbers.add(8);
+        numbers.add(1);
+        numbers.add(9);
 
-     System.out.printlin("after swapping" + number);
+        System.out.println("Original ArrayList: " + numbers);
+
+        // Sort the elements in the ArrayList using Bubble Sort
+        bubbleSort(numbers);
+
+        System.out.println("Sorted ArrayList: " + numbers);
     }
 
-    public static void bubbleSort( ArrayList<integer> list)
-    {
-    int n = list.size();
-    boolean swapped;
+    public static void bubbleSort(ArrayList<Integer> list) {
+    
+        int n = list.size();
+        boolean swapped;
 
-    for(int i =0; i< n-1; i++)
-    {
-    swapped = false;
-    For(int j = 0; j<n-i-1; j++)
-    {
-    if(list.get(j) > list.get(j+1))
-    {
-    //swap the elements
-    int temp = list.get(j);
-    list.set(j, list.get(j+1));
-    list.set(j+1, temp)
+        for (int i = 0; i < n - 1; i++) {
+            swapped = false;
+            for (int j = 0; j < n - i - 1; j++) {
+                if (list.get(j) > list.get(j + 1)) {
+                    // Swap the elements
+                    int temp = list.get(j);
+                    list.set(j, list.get(j + 1));
+                    list.set(j + 1, temp);
+                    swapped = true;
+                }
+            }
+            // If no two elements were swapped in the inner loop, the list is already sorted
+            if (!swapped) {
+                break;
+            }
+        }
+    }
+}
 
-    swapped = true;
-    }
-    }
-    }
-    }
-    }
 
-27.   
+28.   
     
   
       
