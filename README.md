@@ -340,6 +340,42 @@ It provides a reactive programming paradigm that enables developers to handle as
 38. What is a Room Database?
     
    Room is a lightweight relational database commonly used in Android app development. that provides the abstarct layer over SQLite and compile time checks,support for LiveData and RxJava for reactive programming, and easy integration with other Jetpack components like LiveData and ViewModel.It combines the benefits of SQLite, such as efficient storage and performance, with an easier-to-use interface for developers.
+
+   Entity: An Entity represents a table in the database. It is a plain Java or Kotlin class annotated with the @Entity annotation. Each field in the entity class represents a column in the corresponding database table.
+
+DAO (Data Access Object): The DAO is an interface that defines the database operations (such as insert, update, delete, and query) that can be performed on the entities. It is annotated with the @Dao annotation. Developers write methods in the DAO interface, and Room generates the corresponding implementation.
+
+Database: The Database is an abstract class that represents the SQLite database. It is annotated with the @Database annotation and provides methods to obtain instances of the DAO interfaces. Developers need to define the entities, version number, and other configuration options in the Database class.
+
+Room Database Builder: It is a class that constructs and configures the Room database instance. Developers use the Room.databaseBuilder() method to create an instance of the database by providing the context and the database class.
+
+Type Converters: Room provides the ability to define custom type converters to store complex data types in the database. Type converters are annotated with the @TypeConverter annotation and convert non-primitive types into a format that can be stored in the database.
+
+39. What is coroutines?
+    
+  Coroutine(background tasks) is a design pattern that we can use in android to simplify code that executes asynchronously(not simultaneous). Or we can say that it is a background thread that allow execution to be suspended and resumed generalizing subroutines for cooperative multitasking.<br>
+  
+  Coroutines help to manage long-running tasks that might otherwise block the main thread and cause your app to become unresponsive.
+
+
+40. What is navigation component?
+
+The navigation component is a collection of libraries, plugins and toolings that simplifies android navigation.<br>
+when we work with our android apps, when we think about navigation , we simply thinks that navigation is going from one activity to another activity by a button click etc.
+
+But if want to do something complex like doing navigation with bottom navigation bar, in that we need to take care of lot of things like on click of that button the correct page should open and button should get highligted and need to take care care of back- stack in a uniform way, so that pages don't get piled up again and again. so that users dont get confused.<br>
+So in cases like this navigation component comes into play.
+
+41. What is the difference between a service and a thread in Android?
+
+A service is a component in Android that performs long-running operations in the background without a user interface. Services are designed to execute tasks that should continue even when the user switches to a different application or leaves the application altogether. They are often used for tasks such as playing music, handling network requests, or performing periodic data synchronization. Services are started by invoking startService() or bound to using bindService() methods.
+
+
+A thread, on the other hand, is a basic unit of execution within a process. In Android, threads are used to perform concurrent or parallel processing. By default, Android applications have a single thread of execution called the "main" thread or UI thread, which is responsible for handling user interactions and updating the user interface.
+
+
+
+
    
     
     
