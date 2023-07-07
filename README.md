@@ -374,7 +374,7 @@ A service is a component in Android that performs long-running operations in the
 A thread, on the other hand, is a basic unit of execution within a process. In Android, threads are used to perform concurrent or parallel processing. By default, Android applications have a single thread of execution called the "main" thread or UI thread, which is responsible for handling user interactions and updating the user interface.
 
 
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+42. Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
@@ -423,7 +423,9 @@ class Solution {
 }
 }
 
+43. How does data binding work in Android? What are its benefits?
 
+    DataBinding:- It is a technique that allows you to bind the UI components to the XML layout files directly with your data model, such as Live data. It reduces the manual addition of findViewById() which is a boiler code and reduces the performance of the code.
 
 
 
