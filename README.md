@@ -113,6 +113,7 @@
    Data: Specifies the data type or scheme that the component can handle. It can include attributes like the data MIME type or a specific data scheme. For example, an activity can specify that it can handle "http" URLs or image files.<br>
 
 13. Define fragment and its lifecycle?
+14. 
     Fragments:- It is modular and reuseable UI component in android that represents a piece of activity. It is designed for building responsive user interface, it has its own    lifecyle , layout, views etc.
     
     Fragment lifecycle are as follows:-
@@ -128,7 +129,7 @@
     onDestroy(): This method is called when the fragment is being destroyed.<br>
     onDetach(): This method is called when the fragment is detached from its hosting activity.<br>
 
-14. What is the lifecycle of Service?
+15. What is the lifecycle of Service?
 
     onCreate(): This method is called when the service is first created.<br>
     onStartCommand(): This method is called when a client calls startService() to start the service.<br>
@@ -137,33 +138,33 @@
     onRebind(): This method is called when a new client binds to the service after onUnbind() has been called.<br>
     onDestroy(): This method is called when the service is about to be destroyed.<br>
 
-15. A service that was initially started with onStartCommand by a calling startService can still receive a call to _____. when a client calls bindService.
+16. A service that was initially started with onStartCommand by a calling startService can still receive a call to _____. when a client calls bindService.
 
     The onBind() method allows clients to bind to the service and communicate with it through an interface defined by an IBinder. By implementing onBind(), the service 
     provides a way for clients to access its functionality and establish a connection with it.
     So, even if a service is started with startService(), clients can still bind to it using bindService() and interact with it through the returned IBinder object.
 
-16. What is anr?
+17. What is anr?
     
     ANR is application not responding which is an error condition that occurs when the user interface of an application becomes unresponsive and user is not able to
     interact with it. When an ANR occurs, the system displays a dialog to the user, notifying them that the application has stopped responding and giving them the option to       close it.<br>
     It can be caused by long running tasks in the main thread, deadlocks, excessive CPU or memory usage.
 
-17. What is a Deadlock?
+18. What is a Deadlock?
 
     A deadklock occurs when multiple thread wait for other threads to release their resources, resulting in the deadlock state where none of them can proceed.
 
-18. What is bundle?
+19. What is bundle?
     
     A bundle is acontainer that holds the key-value pairs, similar to dictionary or map. It is commonly used for passing data between different components, within
     application such as between fragment and activity.
 
-19. what is Context in android?
+20. what is Context in android?
     
     A Context is an essential class in android that provides access to various resources and system level operations within the application. It repeasents the current state
     and environment in which the application is running.Context is typically obtained from the Android framework and is passed to different components, such as activities,        services, and broadcast receivers, to access system resources and perform operations.
 
-20. what are the types of context?
+21. what are the types of context?
     
     1. Application context:- It is associated with entire life cycle of the application, which can be called useing getApplicationContext(), It should be used wherever
        the context is not tightly coupled to any specific conponent such as activity, service etc.
@@ -171,18 +172,18 @@
        The Activity Context should be used when you need a Context that is closely related to the current activity, such as creating views, inflating layouts etc.
     3.Service context:-The Service Context is specific to a particular service and is tied to the lifecycle of that service.It can be accessed within a service using the this keyword or ServiceName.this.The Service Context should be used when you need a Context that is closely related to the current service, such as accessing service-specific resources, starting new activities, or accessing service-related services.
 
-21. What is manifest?
+22. What is manifest?
 
     A manifest file is an essential file that provides an important information about your application. It contains various key components such as service and the permission which your app needs, launching configuration of your app, package name, intent filter etc.
 
-22. What is adb?
+23. What is adb?
 
     ADB(Android Debug Bridge) it is a command-line tool which helps to communicate between your computer and android emulator or device. It is a part of SDK(Software Development kit) used for mainly debugging and testing the android devices.
     1. Debugging and Logging:
     2. Application Installation and Management:
     3. File Transfer:
 
-23. Difference between abstract and Interface?
+24. Difference between abstract and Interface?
 
     Abstract:-<br>
     An abstract class in java cannot be instantiated , it means we cannot create the object directly from it.
@@ -202,7 +203,7 @@
     Access Modifiers: Abstract class methods can have different access modifiers (public, private, protected), while interface methods are implicitly public.
     Variables: Abstract classes can have member variables, while interfaces can only have constant variables (static final variables).
 
-24. Collections in java?
+25. Collections in java?
 
    In java, Collection framework provides a set of classes and interface for working with group of objects.It provides basic operations like adding, removing and queuing of elements.
 
