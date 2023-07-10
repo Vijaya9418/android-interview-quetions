@@ -428,6 +428,9 @@ class Solution {
 
     DataBinding:- It is a technique that allows you to bind the UI components to the XML layout files directly with your data model, such as Live data. It reduces the manual addition of findViewById() which is a boiler code and reduces the performance of the code.
 
+44. Extention function in android?
+
+   It is a powerful feature provided by kotlin programming language that helps the developer to add new functions to exixting classes, without modifying the source code along with android framework.It provides the convinent way to extend the functionality of classes for better readabillity and reusability.
 
 
    
