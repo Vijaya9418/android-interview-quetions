@@ -513,6 +513,10 @@ val value = MyClass.constantValue
 
 MyClass.doSomething()
 
+48. What is Retain Fragment?
+    
+   It refers to a fragment that is reserved across configuration changes such as screenshot rotation and remains alive when the associated fragment is destroyed and recreated. It allows data and state to be retained during the recreation of the activity.
+
 
    
 
