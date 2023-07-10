@@ -432,6 +432,26 @@ class Solution {
 
    It is a powerful feature provided by kotlin programming language that helps the developer to add new functions to exixting classes, without modifying the source code along with android framework.It provides the convinent way to extend the functionality of classes for better readabillity and reusability.
 
+   Example for creating an extension function for a toast message:-
+   
+   fun Context.showToast(message: String, duration: Int = Toast.LENGTH_SHORT) {
+   
+    Toast.makeText(this, message, duration).show()
+    
+}
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Calling the extension function on the Context class (in this case, the Activity)
+        showToast("Hello, World!")
+    }
+    
+}
+
 
    
     
