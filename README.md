@@ -383,38 +383,41 @@ You can return the answer in any order.
 
  
 
-Two Sum
+Two Sum<br>
 
-Input: nums = [2,7,11,15], target = 9
-Output: [0,1]
-Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
-Example 2:
+Input: nums = [2,7,11,15], target = 9<br>
+Output: [0,1]<br>
+Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].<br>
+Example 2:<br>
 
-Input: nums = [3,2,4], target = 6
-Output: [1,2]
-Example 3:
+Input: nums = [3,2,4], target = 6<br>
+Output: [1,2]<br>
+Example 3:<br>
 
-Input: nums = [3,3], target = 6
-Output: [0,1]
+Input: nums = [3,3], target = 6<br>
+Output: [0,1]<br>
  
 
 Constraints:
 
-2 <= nums.length <= 104
--109 <= nums[i] <= 109
--109 <= target <= 109
-Only one valid answer exists.
+2 <= nums.length <= 104<br>
+-109 <= nums[i] <= 109<br>
+-109 <= target <= 109<br>
+Only one valid answer exists.<br>
 
 solution:-
 
 class Solution {
 
     public int[] twoSum(int[] nums, int target) {
+    
         for(int i=0; i< nums.length; i++){
+        
             for(int j= i+1; j<nums.length; j++){
             
             
             if(target == nums[i] + nums[j]){
+            
                 return new int []{i,j};
             }
         }
@@ -422,6 +425,7 @@ class Solution {
     }
      return new int[] {};
 }
+
 }
 
 43. How does data binding work in Android? What are its benefits?
@@ -443,14 +447,52 @@ class Solution {
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+    
         super.onCreate(savedInstanceState)
+        
         setContentView(R.layout.activity_main)
 
         // Calling the extension function on the Context class (in this case, the Activity)
+        
         showToast("Hello, World!")
     }
     
 }
+
+45. What are high order function in kotlin?
+
+   It is a concept in programming language that can take one or more function as its parameter or can return it as aresult. So these functions are often reffered as callback functions or a function argument.  A high-order function can generate and return a new function as its result. The returned function can be assigned to a variable or used immediately.
+
+High-order functions provide a powerful way to abstract and encapsulate behavior in functional programming paradigms. They enable code reusability, modularity, and the creation of more expressive and flexible code structures. Common examples of high-order functions include map, filter, and reduce in functional programming languages like JavaScript and Python.
+
+46. What is open keyword in kotlin?
+      
+   Open keyword is use to declare a class, function or property for extension or overriding. By default, classes and their members in Kotlin are final, meaning they cannot be inherited or overridden. However, when a class, function, or property is marked as open, it allows other classes to inherit from it or override its behavior.
+
+
+
+   Example:-
+
+open class Animal {
+
+    open fun makeSound() {
+    
+        println("The animal makes a sound")
+        
+    }
+}
+
+class Cat : Animal() {
+
+    override fun makeSound() {
+    
+        println("Meow!")
+        
+    }
+}
+
+
+   
 
 
    
