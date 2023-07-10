@@ -491,6 +491,28 @@ class Cat : Animal() {
     }
 }
 
+47. What is companion object?
+
+    Companion object acts as a container fo static members in kotlin just as the static members in other programming lanugage. A companion object is defined inside a class and is declared using the companion keyword.Members of the companion object can be accessed using the class name without creating an instance of the class.
+
+
+class MyClass {
+
+    companion object {
+        const val constantValue = 42
+        
+        fun doSomething() {
+            println("Doing something...")
+        }
+    }
+}
+
+// Accessing companion object members
+
+val value = MyClass.constantValue
+
+MyClass.doSomething()
+
 
    
 
