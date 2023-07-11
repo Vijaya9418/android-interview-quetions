@@ -518,6 +518,14 @@ MyClass.doSomething()
    It refers to a fragment that is reserved across configuration changes such as screenshot rotation and remains alive when the associated fragment is destroyed and recreated. It allows data and state to be retained during the recreation of the activity.
 
 
+49. RestFul API's?
+   
+   RESTful APIs (Representational State Transfer) are commonly used to communicate with remote servers or web services. RESTful APIs follow a set of principles and conventions for creating, accessing, updating, and deleting resources over HTTP. Here's an overview of using RESTful APIs in Android:
+
+   HTTP Client: Android provides built-in classes and libraries, such as HttpURLConnection or OkHttpClient, to make HTTP requests and interact with RESTful APIs. These classes handle establishing connections, sending requests (GET, POST, PUT, DELETE), and receiving responses.
+
+URL Endpoints: RESTful APIs typically expose different endpoints (URLs) for different resources or actions. You need to identify the appropriate endpoint(s) for the specific operations you want to perform, such as retrieving data, submitting data, or updating resources.
+
    
 
 
