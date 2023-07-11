@@ -526,7 +526,29 @@ MyClass.doSomething()
 
 URL Endpoints: RESTful APIs typically expose different endpoints (URLs) for different resources or actions. You need to identify the appropriate endpoint(s) for the specific operations you want to perform, such as retrieving data, submitting data, or updating resources.
 
-   
+
+50. Key Performance Indicator(KPI) definition?
+    
+    KPI(Key Performance Indicator) is a measurable metrics which measures or evaluate the progress of an organization, project or particular metrics. It is tried to specific objective or outcome and are use to track and monoitor the performance.
+    
+Example KPI: Average Order Value (AOV)
+
+Definition: The average value of each customer order placed within a specific time period.
+
+60. System Architecture?
+
+System architecture refers to the structural design and organization of a software system or application. It defines the components, modules, relationships, and interactions between different parts of the system, as well as the principles and guidelines governing their design and implementation. The system architecture provides a blueprint for how the system's functionality is divided, how components communicate and interact, and how the system satisfies its requirements.
+
+
+Key aspects of system architecture include:
+
+Components:<br>
+Communication and Integration:<br>
+Dependencies and Relationships:<br>
+Data Management:<br>
+Scalability and Performance:<br>
+Security and Reliability:<br>
+
 
 
    
