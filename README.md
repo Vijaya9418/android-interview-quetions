@@ -4,14 +4,15 @@
 
    Android is an operating system specifically designed for mobile and tab applications, its a kind of software stack for mobile applications which is developed by google.
    It is a linux kernel and provide a framework for devlopers to develop the android applications and softwares that can run on android powered devices.
+   
 
-2. What is android framework?
+3. What is android framework?
 
    Android framework is a key component of android operating system, which provides API (Application programming interface), and various tools which are used by developer to      build applications and to interact with various functionalities of android device.<br>
 
    It provides various components and services that facilitate app development such as, activity manager, content provider etc.
 
-3. Define android architecture?
+4. Define android architecture?
 
    Android follows the layered architecture that contains various components and frameworks, which are:-
    1. Linux Kernel:- It sits at the core of an android architecture which is basically provides a low-level hardware abstraction, process management and device dirvers.
@@ -31,7 +32,7 @@
 
    6.Application layer:-This layer comprises the android application with which the user interacts with. It include pre installed systems such as phone dial, messaging app,         browser, as well as third party library.
 
-4. Define android components?
+5. Define android components?
 
    There are basically 4 basic components in android:-
 
@@ -43,7 +44,7 @@
    
    Content provider:- It is used for managing the intercation between different applications.They can be used to start activities, launch services, broadcast messages, or        pass data between components.<br>
 
-5. Define intent and its types.
+6. Define intent and its types.
 
    Intents are basically a messaging system that is use to interaction with components, within the application or with other applications. It can be seen as abstract discription of an operation to be performed.<br>
    
@@ -52,7 +53,7 @@
 
    Implicit intent:- It is used to interact with outer part of the application. For example if we want to open a phone dial with from our application.or if you want to share      an image from your application.
 
-6. Define activity Lifecycle:-
+7. Define activity Lifecycle:-
 
    It is several events or stages with which an activity goes through in an application. Activity lifecycle is consits of seven stages.:-
 
@@ -64,7 +65,7 @@
    6. OnRestart:- It is called when the activity is restarted after being stopped.
    7. OnDestroy :- It is called when the activity is removed from the background.
   
-7. What are OOPs concept?
+8. What are OOPs concept?
 
    Object oriented programming is a software design pattern that is revlovs abround object and classes which provides the reuseability, readability to improve the performance.
    It sits on four pillars, which are :-
@@ -77,7 +78,7 @@
    
    PolyMorphism:- It comprises of two words poly means many and morphism means form, so it is the ability of an objcet to take multiple forms, which we can achieve by             overloading and overrriding.
 
-8. Define overloading and overriding?
+9. Define overloading and overriding?
    
    Overloading:- It is also called run time polymorphism in which meathod have same name , but differ in parameters. It can be differ in the number of params or the type of params.
    
