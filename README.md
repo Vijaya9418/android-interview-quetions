@@ -579,6 +579,29 @@ Security and Reliability:<br>
 3. Readability:- JSON has a more compact and human-readable syntax compared to XML. JSON uses plain text and does not require closing tags, making it easier to read and write by humans. XML, on the other hand, can be more verbose due to its tag structure.
 4. Parsing and Processing:- JSON can be directly parsed into JavaScript objects, while XML requires parsing and traversal using XML parsers.
 5. Usage: XML has been widely used for creating UI's in android development, document markup and data exchange, particularly in industries like publishing and finance. JSON, originally developed for JavaScript, has become popular for web APIs and data interchange in modern web development.
+
+
+64. How many types of joins are their in SQL?
+
+
+Inner Join: Retrieves records that have matching values in both tables being joined. It returns only the rows where the join condition is satisfied.
+
+Left Join (or Left Outer Join): Returns all records from the left (or first) table and the matched records from the right (or second) table. If there are no matches, it returns NULL values for the columns of the right table.
+
+Right Join (or Right Outer Join): Returns all records from the right (or second) table and the matched records from the left (or first) table. If there are no matches, it returns NULL values for the columns of the left table.
+
+Full Join (or Full Outer Join): Returns all records when there is a match in either the left or right table. If there are no matches, it returns NULL values for the columns of the non-matching table.
+
+Cross Join (or Cartesian Join): Produces the Cartesian product of the two tables, resulting in all possible combinations of rows from both tables. It doesn't require a join condition.
+
+Self Join: Joins a table with itself, treating it as two separate tables, typically using an alias to differentiate between the two instances of the same table.
+
+
+65. How to find any view element into your program in android?
+
+View View = (View) LayoutInflater.from(ctx).inflate(R.layout.preference_layout);
+EdidText editText = view.findViewById(R.id.description);
+builder.setView(view);
    
 
 
