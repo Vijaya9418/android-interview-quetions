@@ -572,6 +572,8 @@ Security and Reliability:<br>
 
 
 63. Difference between XML and JSON?
+
+
 1. Full Form:- XML**(Extensible Markup Language)** whereas JSON is **(Javascript Object Notation)**.
 2. Syntax:- XML uses a **<tag>** format to define an element whereas JSON uses the key-value pair seperated by colon  **({ "key": "value" })**.
 3. Readability:- JSON has a more compact and human-readable syntax compared to XML. JSON uses plain text and does not require closing tags, making it easier to read and write by humans. XML, on the other hand, can be more verbose due to its tag structure.
