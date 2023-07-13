@@ -550,6 +550,23 @@ Data Management:<br>
 Scalability and Performance:<br>
 Security and Reliability:<br>
 
+61. how many types of dialog boxes are their in android?
+
+   AlertDialog: This is a versatile dialog box that can display a title, message, and optional buttons for actions or choices.
+
+   ProgressDialog: This dialog is used to show the progress of a long-running operation. It typically includes a progress bar or a spinning wheel and may display a message.
+
+   DatePickerDialog: This dialog allows the user to select a date from a calendar-like interface.
+
+   TimePickerDialog: This dialog enables the user to pick a specific time using a clock-like interface.
+
+   BottomSheetDialog: This is a dialog that slides up from the bottom of the screen, typically used to display additional options or actions.
+
+   Custom Dialogs: Android also allows developers to create custom dialog boxes by extending the Dialog class and designing a custom layout.
+
+
+62. 
+
 
 
    
