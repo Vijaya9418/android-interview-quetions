@@ -565,7 +565,19 @@ Security and Reliability:<br>
    Custom Dialogs: Android also allows developers to create custom dialog boxes by extending the Dialog class and designing a custom layout.
 
 
-62. 
+62. Integer starting at 0 are serialised in a sequence in the following format 0123456779..... Each digit represents a position in the sequence for example position 0: digit 0 position 5: digit 5 position position 11: digit 0 write a function that returns a digit given a position in java for all the scenarios not only for given example.
+
+
+
+
+
+63. Difference between XML and JSON?
+1. Full Form:- XML**(Extensible Markup Language)** whereas JSON is **(Javascript Object Notation)**.
+2. Syntax:- XML uses a **<tag>** format to define an element whereas JSON uses the key-value pair seperated by colon  **({ "key": "value" })**.
+3. Readability:- JSON has a more compact and human-readable syntax compared to XML. JSON uses plain text and does not require closing tags, making it easier to read and write by humans. XML, on the other hand, can be more verbose due to its tag structure.
+4. Parsing and Processing:- JSON can be directly parsed into JavaScript objects, while XML requires parsing and traversal using XML parsers.
+5. Usage: XML has been widely used for creating UI's in android development, document markup and data exchange, particularly in industries like publishing and finance. JSON, originally developed for JavaScript, has become popular for web APIs and data interchange in modern web development.
+   
 
 
 
