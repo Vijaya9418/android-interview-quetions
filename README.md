@@ -1,4 +1,4 @@
-# android-interview-quetions
+# android-basic-quetions
 
 1. What is android?
 
@@ -602,6 +602,8 @@ Self Join: Joins a table with itself, treating it as two separate tables, typica
 View View = (View) LayoutInflater.from(ctx).inflate(R.layout.preference_layout);<br>
 EdidText editText = view.findViewById(R.id.description);<br>
 builder.setView(view);<br>
+
+66. 
    
 
 
