@@ -605,7 +605,43 @@ View View = (View) LayoutInflater.from(ctx).inflate(R.layout.preference_layout);
 EdidText editText = view.findViewById(R.id.description);<br>
 builder.setView(view);<br>
 
-66. 
+66. Binary Search?
+
+
+class HelloWorld {
+    
+       public static int search(int []nums, int target) {
+        //Your code goes here
+        int n = nums.length;
+        int left = 0;
+        int right = n-1;
+
+
+
+    while(right>=left){
+                int mid = left+right/2;
+        if(target> nums[mid]){
+            left = mid + 1;
+        }
+        else if (target < nums[mid]){
+            right = mid - 1;
+        }
+        else{
+            return mid;
+        }
+    }
+    
+return -1;
+
+    }
+    
+    public static void main(String[] args) {
+      int  arr[] = {1, 3, 7, 9, 11, 12, 45};
+        search(arr,3);
+        System.out.println(search(arr,3));
+    }
+    
+}
    
 
 
