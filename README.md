@@ -169,8 +169,10 @@
     
     1. Application context:- It is associated with entire life cycle of the application, which can be called useing getApplicationContext(), It should be used wherever
        the context is not tightly coupled to any specific conponent such as activity, service etc.
-    2. Activity Lifecycle:- It is specific to particular activity and tied to the lifecycle of that service.It can be acessed within the activity using this keyword.
+       
+    3. Activity Lifecycle:- It is specific to particular activity and tied to the lifecycle of that service.It can be acessed within the activity using this keyword.
        The Activity Context should be used when you need a Context that is closely related to the current activity, such as creating views, inflating layouts etc.
+       
     3.Service context:-The Service Context is specific to a particular service and is tied to the lifecycle of that service.It can be accessed within a service using the this keyword or ServiceName.this.The Service Context should be used when you need a Context that is closely related to the current service, such as accessing service-specific resources, starting new activities, or accessing service-related services.
 
 22. What is manifest?
