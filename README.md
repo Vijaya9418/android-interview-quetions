@@ -201,10 +201,10 @@
 
     Differences:
     
-    Implementation: A class can extend only one abstract class, but it can implement multiple interfaces.
-    Abstract classes can have both abstract and non-abstract methods with complete implementations. Interfaces can only have abstract methods.
-    Access Modifiers: Abstract class methods can have different access modifiers (public, private, protected), while interface methods are implicitly public.
-    Variables: Abstract classes can have member variables, while interfaces can only have constant variables (static final variables).
+    Implementation: A class can extend only one abstract class, but it can implement multiple interfaces.<br>
+    Abstract classes can have both abstract and non-abstract methods with complete implementations. Interfaces can only have abstract methods.<br>
+    Access Modifiers: Abstract class methods can have different access modifiers (public, private, protected), while interface methods are implicitly public.<br>
+    Variables: Abstract classes can have member variables, while interfaces can only have constant variables (static final variables).<br>
 
 25. Collections in java?
 
