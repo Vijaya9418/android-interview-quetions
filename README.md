@@ -645,7 +645,7 @@ return -1;
 
 67. Find the largest element in an array?
 
-public class Main {
+public class LargestElement {
 
     public static void main(String[] args) {
         int[] array = {10, 20, 30, 40, 50, 60};
@@ -664,6 +664,23 @@ public class Main {
         System.out.println("The largest element in the array is: " + largest);
     }
 }
+
+68. Find the salary of an employee whose salary is greater than 50000.
+
+public class Salary {
+
+    public static void main(String[] args) {
+
+    List<Employee> emp = new ArrayList();
+    emp.add(new Employee("Vijaya", 10000);
+    emp.add(new Employee("Vijaya", 20000);
+    emp.add(new Employee("Vijaya", 60000);
+    
+      emp.stream.filter( em -> em.getSalary() > 50000).foreach(System.out.println));
+      
+        }
+}
+    
 
 
    
