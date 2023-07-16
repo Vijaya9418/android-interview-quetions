@@ -680,6 +680,99 @@ public class Salary {
       
         }
 }
+
+69. What are composable funstions?
+
+   Composable functions refers to the specific feature in jetpack compose which is used for creating the UI in android. It is basically a chain of functions, in which we can use one        function inside another function.
+
+      1. Composable functions allow you to describe the UI components and their behavior declaratively. 
+      2. UI components are defined as composable functions. Each composable function represents a self-contained UI element, such as a button, text field, or screen layout.
+      3.  Composable functions can be nested and combined to create complex UI hierarchies. 
+
+
+70. What are data class in android?
+
+      Data Class in android are special feature which is use to represent and hold the data in a concise way. It is primarly use for storing the data does not contain the business 
+      logic. Data classes automatically generate useful methods, such as equals(), hashCode(), toString(), and copy(), based on the properties defined in the class.
+
+
+71. Write the sample code in the pattern of MVVM?
+
+    Model(Data Layer):-
+
+      // Assume we have a User data class representing user information
+    
+      data class User(val id: Int, val name: String, val email: String)
+
+     // Assume we have a UserRepository responsible for managing user data
+
+       class UserRepository {
+    
+         // Simulated database or network operations
+        fun getUser(userId: Int): User {
+        // Retrieve user data from the database or network
+        return User(1, "John Doe", "johndoe@example.com")
+    }
+}
+
+
+ View(UI layer):-
+
+     import androidx.appcompat.app.AppCompatActivity
+     import android.os.Bundle
+     import androidx.activity.viewModels
+
+    class MainActivity : AppCompatActivity() {
+
+    private val viewModel: UserViewModel by viewModels()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val userId = 1
+        viewModel.loadUser(userId)
+
+        // Observe the LiveData from the ViewModel and update the UI accordingly
+        viewModel.user.observe(this) { user ->
+            // Update the UI with the user data
+            textViewUserName.text = user.name
+            textViewUserEmail.text = user.email
+        }
+    }
+}
+    
+
+ViewModel (Presentation Layer):-
+
+    import androidx.lifecycle.LiveData
+    import androidx.lifecycle.MutableLiveData
+    import androidx.lifecycle.ViewModel
+
+    class UserViewModel(private val userRepository: UserRepository) : ViewModel() {
+    
+    private val _user = MutableLiveData<User>()
+    val user: LiveData<User> get() = _user
+
+    fun loadUser(userId: Int) {
+        // Simulated asynchronous data retrieval
+        val fetchedUser = userRepository.getUser(userId)
+        _user.value = fetchedUser
+    }
+}
+
+   
+
+
+
+
+
+
+
+
+
+ 
+   
     
 
 
