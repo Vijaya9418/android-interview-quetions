@@ -619,7 +619,7 @@ class HelloWorld {
 
 
     while(right>=left){
-                int mid = left+right/2;
+                int mid = left+(right-left)/2;
         if(target> nums[mid]){
             left = mid + 1;
         }
@@ -642,6 +642,30 @@ return -1;
     }
     
 }
+
+67. Find the largest element in an array?
+
+public class Main {
+
+    public static void main(String[] args) {
+        int[] array = {10, 20, 30, 40, 50, 60};
+        
+        // Assume the first element is the largest
+        int largest = array[0];
+        
+        // Iterate through the array to find the largest element
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] > largest) {
+                largest = array[i];
+            }
+        }
+        
+        // Print the largest element
+        System.out.println("The largest element in the array is: " + largest);
+    }
+}
+
+
    
 
 
