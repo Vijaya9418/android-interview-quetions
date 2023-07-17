@@ -763,11 +763,11 @@ ViewModel (Presentation Layer):-
 
 72. What is CI/CD?
 
-         CI/CD is Contineous Integration/ Continueous Deployment, which is a set of practices and tools that automates the process of testing, debugging and deploying the software                changes to the production.
-         CI/CD piplelines are implemented using various tools such as git, sourcetree, bitbucket. So it oftehn trigger the pipelines whenever there is a change done by Developers.
+    CI/CD is Contineous Integration/ Continueous Deployment, which is a set of practices and tools that automates the process of testing, debugging and deploying the software                changes to the production.
+    CI/CD piplelines are implemented using various tools such as git, sourcetree, bitbucket. So it oftehn trigger the pipelines whenever there is a change done by Developers.
 
-          CI:- CI focuses on merging code changes from multiple developers into a shared repository frequently, typically several times a day.
-          CD:- CD is an extension of CI that focuses on automating the release and deployment of software changes to production environments. 
+     CI:- CI focuses on merging code changes from multiple developers into a shared repository frequently, typically several times a day.
+     CD:- CD is an extension of CI that focuses on automating the release and deployment of software changes to production environments. 
 
    
 
