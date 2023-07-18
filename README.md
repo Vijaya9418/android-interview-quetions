@@ -832,6 +832,24 @@ ViewModel (Presentation Layer):-
       println("the length is $length")
       }
 
+
+78. What is the purpose of android asset studio?
+
+    The android asset studio is a web based tool which is provided by google that helps developer to create graphic assets for their android appliaction. It basically helps you to simplify the process of generation of common app iocns,launcher icon, and other graphic resources. It helps to save time and effort in creating and managing graphical assests.
+
+
+79. Which android jetpack library is used to simplify the database access?
+
+      Room library which is a part of android jetpack component and provides the abstraction layer over a sqlite, making it easier to work with database.
+
+
+80. Which library is use to manage the image loading and caching?
+
+   Glide is a powerful and flexible library that simplifies the process of loading images from various sources such as URLs, local storage, or resources  efficirntly caching them from improved performance.
+
+81. 
+
+
    
 
 
