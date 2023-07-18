@@ -813,7 +813,24 @@ ViewModel (Presentation Layer):-
 
    A list in kotlin can be created using **listOf()** or **mutableListOf()** function.
 
+   listOf() function is to create an immutable list. Once created the list cannot be added,removed or changed.
 
+      example:- val myLis = listOf("apple","banana");
+
+   mutableListOf() function allows you to modify the list by adding,removing or chainging elements.
+
+     example:- val myLis = mutableListOf("apple","banana","mango");
+
+
+77. What is the purpose of let keyword in kotlin?
+
+   A let function is a scoping function that provides a concise way to perform operation on nullable objects or objects within certain scope.Its primary purpose is to avoid nullability issue and execute the block of code onl when a non-null object is encountered.
+
+      val nullableString:String? = "Hello";
+      nullableString?.let{
+      val length = it.length
+      println("the length is $length")
+      }
 
    
 
