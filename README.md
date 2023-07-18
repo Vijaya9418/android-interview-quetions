@@ -767,7 +767,53 @@ ViewModel (Presentation Layer):-
     CI/CD piplelines are implemented using various tools such as git, sourcetree, bitbucket. So it oftehn trigger the pipelines whenever there is a change done by Developers.
 
      CI:- CI focuses on merging code changes from multiple developers into a shared repository frequently, typically several times a day.
-     CD:- CD is an extension of CI that focuses on automating the release and deployment of software changes to production environments. 
+     CD:- CD is an extension of CI that focuses on automating the release and deployment of software changes to production environments.
+
+
+73. How do you define abstract class in android?
+
+    It is defined using abstract keyword. It allows you to define the coomon behaviour and properties that can be inherited by its subclasses, but it cannot be instantiated by its own.
+
+          syntax:-
+
+         abstract class AbstractClassName();
+
+          example:-
+
+          abstract class Shape(){
+    
+               abstract fun calculateArea():Double
+             }
+                class Rectangle(val w, val h){
+                override fun calculateArea():Double{
+                return w*h
+             }
+          }
+          fun main(){
+          val rec = Rectangle(5.0,3.0)
+          rec.printDescription()
+          val rea = rec.calculateArea();
+
+
+75. What is the purpose of 'when' in kotlin?
+
+   In kotlin the purpose of when is to replace the switch statement or keyword in other programming language such as switch keyword. It allows you to perform brancing based on the value of an expression.
+
+   example:-
+
+         val num = 5;
+         val rsult = when(num){
+            1 -> "One"
+            2 -> "Two"
+            3 -> "Three"
+         else -> "Other"
+      }
+      
+76. How to create a list in kotlin?
+
+   A list in kotlin can be created using **listOf()** or **mutableListOf()** function.
+
+
 
    
 
