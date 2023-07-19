@@ -847,8 +847,55 @@ ViewModel (Presentation Layer):-
 
    Glide is a powerful and flexible library that simplifies the process of loading images from various sources such as URLs, local storage, or resources  efficirntly caching them from improved performance.
 
-81. 
+81. What is recyclerview ?
 
+In Android, RecyclerView is a more advanced and flexible version of ListView and GridView. It's a powerful UI component used to efficiently display large lists or grids of items, providing features such as item recycling, data binding, and customizable layouts. Here's an example of how to use RecyclerView in Android.
+
+class MyAdapter(private val dataList: List<String>) : RecyclerView.Adapter<MyAdapter.ViewHolder>() {
+    
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_list, parent, false)
+        return ViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val item = dataList[position]
+        holder.bind(item)
+    }
+
+    override fun getItemCount(): Int {
+        return dataList.size
+    }
+
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        private val textView: TextView = itemView.findViewById(R.id.item_text_view)
+
+        fun bind(item: String) {
+            textView.text = item
+        }
+    }
+}
+Implement the necessary methods such as onCreateViewHolder, onBindViewHolder, and getItemCount.<br>
+In onCreateViewHolder, inflate the item_list.xml layout file and return a new instance of a custom ViewHolder that holds references to the UI elements.<br>
+In onBindViewHolder, bind the data to the UI elements of the ViewHolder based on the item position in the data list.<br>
+
+82. What is pending Intent ?
+    
+   Pending Intent in android is a token that represents the future intent. It allows you to start an operation or an activity or service at a later point of time. even if your application is not running or the component (e.g., activity, service) you want to start is not currently instantiated.
+
+      Alarm and Notification: You can schedule an Intent to be fired at a specific time or in response to a particular event, such as a timer or an incoming notification.
+
+      Starting Activities or Services: You can create a PendingIntent to launch an activity or start a service at a later time or in response to an external trigger, such as a user action or a system event.
+
+      Broadcasting Intents: PendingIntent can be used to broadcast an Intent to other components or applications. This allows you to trigger actions or events across different parts of the system.
+
+      Background Operations: PendingIntent is commonly used for performing background tasks or operations, such as downloading data or performing periodic updates, even when the application is not in the foreground.
+
+   **   alarmIntentRTC = PendingIntent.getBroadcast(context, ALARM_TYPE_RTC, intent, PendingIntent.FLAG_MUTABLE | PendingIntent.FLAG_UPDATE_CURRENT);**
+   
+         context – The Context in which this PendingIntent should perform the broadcast. 
+         requestCode – Private request code for the sender 
+         intent – The Intent to be broadcast.
 
    
 
