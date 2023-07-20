@@ -761,6 +761,7 @@ ViewModel (Presentation Layer):-
     }
 }
 
+
 72. What is CI/CD?
 
     CI/CD is Contineous Integration/ Continueous Deployment, which is a set of practices and tools that automates the process of testing, debugging and deploying the software                changes to the production.
