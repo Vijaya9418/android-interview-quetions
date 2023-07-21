@@ -99,7 +99,7 @@
     
     there are two types of content providers:-
 
-    Custom Content provider:- These are the content provider which are created by the Developers to share data between different applications or components within the             application.Developers define their own Content Provider by subclassing the ContentProvider class and implementing the necessary methods to handle data operations.
+    Custom Content provider:- These are the content provider which are created by the Developers to share data between different applications or components within the application.Developers define their own Content Provider by subclassing the ContentProvider class and implementing the necessary methods to handle data operations.
 
     System Content provider:- These are the providers which are provided by android system.It manages and provide access to various system data such as contact, media, files      and settings.These Content Providers are part of the Android framework and are responsible for maintaining and exposing system-related data to applications.
 
