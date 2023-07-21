@@ -898,6 +898,88 @@ In onBindViewHolder, bind the data to the UI elements of the ViewHolder based on
          requestCode – Private request code for the sender 
          intent – The Intent to be broadcast.
 
+
+83. Dragger and Hilt?
+    
+**Dagger:**
+
+Dagger is a popular dependency injection (DI) framework for Java and Android development. It helps manage the dependencies between different components in an application and promotes the principles of Inversion of Control (IoC) and Dependency Injection (DI). By using Dagger, you can create modular, maintainable, and testable code.
+
+Real-time Example:
+Let's consider an example of a simple Android application with two classes: Car and Engine. The Car class depends on the Engine class to run. Without using Dagger, you might directly instantiate the Engine class inside the Car class, leading to tight coupling between the two.
+
+Without Dagger (Direct instantiation):
+
+
+public class Car {
+
+    private Engine engine;
+
+    public Car() {
+        engine = new Engine();
+    }
+
+    // ...rest of the Car class implementation
+}
+
+
+with Dagger:-
+
+public class Car {
+
+    private Engine engine;
+
+    @Inject
+    public Car(Engine engine) {
+        this.engine = engine;
+    }
+
+    // ...rest of the Car class implementation
+}
+
+In the Dagger example, we use the @Inject annotation to tell Dagger that the Car class depends on the Engine class. With this setup, Dagger will automatically create and provide an instance of Engine when creating a Car object. This way, you decouple the Car class from directly creating the Engine instance, making the code more maintainable and easier to test.
+
+
+**Hilt:-**
+
+Hilt is a dependency injection library built on top of Dagger, specifically designed for Android development. It simplifies the process of setting up and using Dagger in Android apps by providing integration with Android components like activities, fragments, services, etc. Hilt uses annotations and code generation to create and manage dependency injection.
+
+Step 1: Set up Hilt in your project by adding the necessary dependencies and annotations.
+
+Step 2: Create a module that provides the dependencies (in this case, the Engine class).
+
+@Module
+@InstallIn(ApplicationComponent.class)
+public class EngineModule {
+
+    @Provides
+    public Engine provideEngine() {
+        return new Engine();
+    }
+    
+}
+
+
+Step 3: Annotate the Car class with @Inject, and Hilt will automatically provide the Engine dependency.
+
+public class Car {
+
+    private Engine engine;
+
+    @Inject
+    public Car(Engine engine) {
+        this.engine = engine;
+    }
+
+    // ...rest of the Car class implementation
+}
+
+By using Hilt, you get the benefits of Dagger while reducing boilerplate code, improving readability, and simplifying the setup process for Android-specific components.
+
+
+
+
+
    
 
 
