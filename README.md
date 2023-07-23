@@ -343,6 +343,74 @@
 
 It provides a reactive programming paradigm that enables developers to handle asynchronous operations and data streams in a more declarative and composable way.
 
+
+dependencies {
+
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation 'io.reactivex.rxjava3:rxjava:3.1.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+}
+
+Define a data model to hold the fetched data (Same as the previous example):
+
+data class Post(val id: Int, val title: String, val body: String)
+
+
+Create a Retrofit service to make API calls (Same as the previous example):
+
+interface ApiService {
+
+    @GET("posts")
+    fun getPosts(): Single<List<Post>>
+}
+
+
+Fetch the data using RxJava in your MainActivity:
+
+class MainActivity : AppCompatActivity() {
+
+    private val apiService: ApiService by lazy {
+        Retrofit.Builder()
+            .baseUrl("https://jsonplaceholder.typicode.com/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
+            .build()
+            .create(ApiService::class.java)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Use RxJava to fetch data
+        apiService.getPosts()
+            .subscribeOn(Schedulers.io())
+            .observeOn(AndroidSchedulers.mainThread())
+            .subscribe(
+                { posts -> displayPosts(posts) },
+                { error -> showError() }
+            )
+            .addTo(CompositeDisposable())
+    }
+
+    private fun displayPosts(posts: List<Post>) {
+        // Update UI with fetched data
+        // ...
+    }
+
+    private fun showError() {
+        Toast.makeText(this, "Error fetching data", Toast.LENGTH_SHORT).show()
+    }
+
+    private val compositeDisposable = CompositeDisposable()
+
+    override fun onDestroy() {
+        super.onDestroy()
+        compositeDisposable.clear()
+    }
+}
+
 38. What is a Room Database?
     
    Room is a lightweight relational database commonly used in Android app development. that provides the abstarct layer over SQLite and compile time checks,support for LiveData and RxJava for reactive programming, and easy integration with other Jetpack components like LiveData and ViewModel.It combines the benefits of SQLite, such as efficient storage and performance, with an easier-to-use interface for developers.
