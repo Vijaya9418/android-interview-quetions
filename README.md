@@ -36,13 +36,13 @@
 
    There are basically 4 basic components in android:-
 
-   Activity:- It represents the single screen of UI component and with which the user interacts with, It helps the user to navigate from one activity to another and perform       some action.<br>
+   Activity:- It represents the single screen of UI component and with which the user interacts with, It helps the user to navigate from one activity to another and perform some action.<br>
    
    Service:- It is used for performing the long running tasks/background tasks or which does not required intercation with UI.<br>
    
    Broadcast receivers:- It is basically used for receiving and responding to the messages or broadcasting the messages.<br>
    
-   Content provider:- It is used for managing the intercation between different applications.They can be used to start activities, launch services, broadcast messages, or        pass data between components.<br>
+   Content provider:- It is used for managing the intercation between different applications.They can be used to start activities, launch services, broadcast messages, or pass data between components.<br>
 
 6. Define intent and its types.
 
@@ -70,21 +70,23 @@
    Object oriented programming is a software design pattern that is revlovs abround object and classes which provides the reuseability, readability to improve the performance.
    It sits on four pillars, which are :-
    
-   Inheritance:- It is the ability of a class to inherit the property of its parent class.for example:- a child can inherit the property of parents.
+   Inheritance:- It is the ability of a class to inherit the property of its parent class.for example:- a child can inherit the property of parents. Or an activity by extending the Activity class or one of its subclasses, such as AppCompatActivity or FragmentActivity. By doing so, they inherit all the functionalities and behaviors of the base class while having the flexibility to add their specific functionality.
    
-   Abstract:- It is used to hide most of the information and to show only the relevant information to the user. for example:- ATM.
+   Abstract:- It is used to hide most of the information and to show only the relevant information to the user. for example:- ATM. or a View in android
+   View class is a fundamental building block for creating user interfaces. It represents UI elements such as buttons, text fields, images, and more. The View class itself is an abstract class, and developers typically use its subclasses to create specific UI elements.
    
-   Encapsulation:- It is the process of bundling the data(attribute) and methods(behaviour) together and get the full access through them with the help of access modifier         public, protected and private. We also use getter and setters which helps in data hiding and maintaining the inetrgrity of the data.
+   Encapsulation:- It is the process of bundling the data(attribute) and methods(behaviour) together and get the full access through them with the help of access modifier public, protected and private. We also use getter and setters which helps in data hiding and maintaining the inetrgrity of the data.
+   he usage of private fields and public getter and setter methods to control access to the data in a data model class.
    
-   PolyMorphism:- It comprises of two words poly means many and morphism means form, so it is the ability of an objcet to take multiple forms, which we can achieve by             overloading and overrriding.
+   PolyMorphism:- It comprises of two words poly means many and morphism means form, so it is the ability of an objcet to take multiple forms, which we can achieve by overloading and overrriding.  onClick() method in event handling for various UI elements, such as buttons. because it can be overridden in different classes to handle events for different UI elements.
 
-9. Define overloading and overriding?
+10. Define overloading and overriding?
    
    Overloading:- It is also called run time polymorphism in which meathod have same name , but differ in parameters. It can be differ in the number of params or the type of params.
    
    Overriding:- It is also called compile time polymorphism in which a sub class has the same method name as that of the super class, but the implementation is differnt.
 
-10. what are the types of service?
+11. what are the types of service?
     
     There are two types of service:-
    
