@@ -364,6 +364,68 @@ Type Converters: Room provides the ability to define custom type converters to s
   Coroutines help to manage long-running tasks that might otherwise block the main thread and cause your app to become unresponsive.
 
 
+   One real-time example of using coroutines in Android is to perform asynchronous tasks, such as making network requests, without blocking the main UI thread.
+
+   1. Set up the necessary dependencies in your project's build.gradle file:
+
+      dependencies {
+      
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+}
+
+2. Define a data model to hold the fetched data:
+
+data class Post(val id: Int, val title: String, val body: String)
+
+3. Create a Retrofit service to make API calls:
+
+interface ApiService {
+
+    @GET("posts")
+    suspend fun getPosts(): List<Post>
+}
+
+4. Fetch the data using coroutines in your MainActivity:
+
+class MainActivity : AppCompatActivity() {
+
+    private val apiService: ApiService by lazy {
+        Retrofit.Builder()
+            .baseUrl("https://jsonplaceholder.typicode.com/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+            .create(ApiService::class.java)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        // Use coroutines to fetch data
+        CoroutineScope(Dispatchers.Main).launch {
+            try {
+                val posts = withContext(Dispatchers.IO) {
+                    apiService.getPosts()
+                }
+                displayPosts(posts)
+            } catch (e: Exception) {
+                Toast.makeText(this@MainActivity, "Error fetching data", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    private fun displayPosts(posts: List<Post>) {
+        // Update UI with fetched data
+        // ...
+    }
+}
+
+
+
+
+
 40. What is navigation component?
 
 The navigation component is a collection of libraries, plugins and toolings that simplifies android navigation.<br>
