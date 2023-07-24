@@ -344,6 +344,7 @@
     Fastlane is a set of tools that automates various tasks in the mobile app development cycle.It simplifies the processes such as building, testing, deploying the iOS/android apps. It provides the command line interface to define and execute our commands. Making it easier to handle tasks such as  like building app releases, running tests, and submitting apps to app stores.
 
 37. What is RxJava?
+    
     In Android development, RxJava can be used to simplify handling asynchronous tasks such as network requests, database operations, and UI events. It provides a set of operators that allow you to transform, filter, and combine data streams, making it easier to handle complex asynchronous scenarios.<br>
 
 It provides a reactive programming paradigm that enables developers to handle asynchronous operations and data streams in a more declarative and composable way.
