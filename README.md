@@ -213,6 +213,7 @@
    In java, Collection framework provides a set of classes and interface for working with group of objects.It provides basic operations like adding, removing and queuing of elements.
 
 25. What is an exception?
+    
     An exception is an event that occurs during the execution of a program that disrupts the original flow of a program.Exceptions are use to handle, errors,              exception conditions. The java language provides build-in handling exception mechanism to deal with this type of situation.<br>
     
     Exception Hierarchy:
@@ -224,7 +225,7 @@
       Exception handling is the process of catching and handling exceptions to prevent program termination and provide meaningful feedback to the user.
       The try-catch-finally block is used to handle exceptions. The try block contains the code that may throw an exception, the catch block catches and handles the         exception, and the finally block is executed regardless of whether an exception occurs or not.
 
-26. Sort the list of elements using bubble sort?
+27. Sort the list of elements using bubble sort?
     
     import java.util.ArrayList;
 
@@ -288,12 +289,16 @@
 29. Dependency Inject using koin?
     
     Dependency injection is a design pattern that provides the dependency which are required by classes and object, instead of letting them create their own, which helps to make them loosly coupled and leads to improve the code readability and testebility. As creating the stubs and mocks for testing is easy with dependency injection.<br>
+    
     Koin is a lightweight DI framework for Kotlin that simplifies dependency injection in Android applications.<br>
+    
     Define Dependency :- In koin dependency are registered through module which is a logical group of dependencies. for example:- we can define a dependency through network related, UI component or database.<br>
+    
     Register dependencies: Within the module, register the dependencies using the single or factory functions. For example, you can register OkHttpClient as a singleton and Retrofit as a factory.
+    
     Inject dependencies: In your class, declare the dependencies as constructor parameters. Koin will automatically inject the dependencies based on the registered components.
 
-30. Explain the differences between Serializable and Parcelable interfaces in Android?
+31. Explain the differences between Serializable and Parcelable interfaces in Android?
 
     Serializable interface: It is a standard Java interface used to serialize an object's state into a byte stream. It is relatively easy to implement but can be          slower and less efficient compared to Parcelable.<br>
 
