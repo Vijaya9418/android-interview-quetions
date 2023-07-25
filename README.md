@@ -1172,6 +1172,25 @@ fun main() {
 Android provides several mechanisms to achieve multithreading, such as using Thread, AsyncTask, HandlerThread, and more recently, ExecutorService or Kotlin coroutines.
 
 
+public class MyAsyncTask extends AsyncTask<Void, Void, Void> {
+    @Override
+    protected Void doInBackground(Void... voids) {
+    
+        // Background computation (e.g., network request, database query)
+        return null;
+    }
+
+    @Override
+    protected void onPostExecute(Void aVoid) {
+        // UI thread; update UI after background task completes
+    }
+}
+
+// Executing the AsyncTask
+new MyAsyncTask().execute();
+
+
+
 
 
    
