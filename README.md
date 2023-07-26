@@ -1189,6 +1189,38 @@ public class MyAsyncTask extends AsyncTask<Void, Void, Void> {
 // Executing the AsyncTask
 new MyAsyncTask().execute();
 
+85. What is cameraX Library?
+
+   CameraX is the jetpack library that is the easiest way to add rich camera functionality to your app that works consistantly across android versions and devices. So, with just few lines of code we can show many things like taking a photo, recording a video and providing tap to focus and pinch to zoom function.
+
+   Most common camera use cases are supported:
+
+Preview: View an image on the display.<br>
+Image analysis: Access a buffer seamlessly for use in your algorithms, such as to pass to ML Kit.<br>
+Image capture: Save images.<br>
+Video capture: Save video and audio.<br>
+
+
+  // Take the photo
+        imageCapture.takePicture(outputFileOptions, ContextCompat.getMainExecutor(this),
+        
+                new ImageCapture.OnImageSavedCallback() {
+                    @Override
+                    public void onImageSaved(@NonNull ImageCapture.OutputFileResults outputFileResults) {
+                        // Photo capture success
+                        runOnUiThread(() ->
+                                Toast.makeText(CameraActivity.this, "Photo saved", Toast.LENGTH_SHORT).show());
+                    }
+
+                    @Override
+                    public void onError(@NonNull ImageCaptureException exception) {
+                        // Photo capture failure
+                        runOnUiThread(() ->
+                                Toast.makeText(CameraActivity.this, "Photo capture failed: " + exception.getMessage(),
+                                        Toast.LENGTH_SHORT).show());
+                    }
+                }
+
 
 
 
