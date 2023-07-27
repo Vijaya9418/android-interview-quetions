@@ -1292,6 +1292,16 @@ Video capture: Save video and audio.<br>
 It stands for Android Interface Definition language. It is a technolofy used in android application to facilitate communication between different processes or components runing in separate applications or even with different devices. It is primary used to create and define the interface for interprocess communication in android.
 It is commonly used for scenarios where components like services in one application need to be accessed or utilized by components in another application. Which is useful in implementing client server , inter app communication, sharing data between applications.
 
+87. What is the difference between java and kotlin?
+
+    both are object oriented programming language used for developing the applications on java virtual machine platform.
+    
+    while they differ in some functionalities:-
+    1 Syntax:- Kotlin is known for its more concise syntax compared to java. It resuces the boilerpoint code and provide features like type inference.<br>
+    2. Null Saftery:- Kotlin has build in null saftey features, distinguishing between nullable and non-nullable types.<br>
+    3. Extension function:- kotlin allows you to add new funcyions to exixting classes without modifying their source code, using extension function.<br>
+    4. Data Classes:- kotlin introduces data classes which are used to hold data and automatically generates useful methods like equals(), hashCode(), toString().<br>
+
 
 
 
