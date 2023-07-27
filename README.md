@@ -338,6 +338,71 @@ Reduced Boilerplate Code: MVVM, when combined with data binding and LiveData, si
 
 Adaptability to Reactive Programming: MVVM works well with reactive programming principles. LiveData and other reactive components enable a more reactive approach to handling data flows and UI updates, making it easier to handle complex asynchronous operations.
 
+ Model(Data Layer):-
+
+      // Assume we have a User data class representing user information
+    
+      data class User(val id: Int, val name: String, val email: String)
+
+     // Assume we have a UserRepository responsible for managing user data
+
+       class UserRepository {
+    
+         // Simulated database or network operations
+        fun getUser(userId: Int): User {
+        // Retrieve user data from the database or network
+        return User(1, "John Doe", "johndoe@example.com")
+    }
+}
+
+
+ View(UI layer):-
+
+     import androidx.appcompat.app.AppCompatActivity
+     import android.os.Bundle
+     import androidx.activity.viewModels
+
+    class MainActivity : AppCompatActivity() {
+
+    private val viewModel: UserViewModel by viewModels()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val userId = 1
+        viewModel.loadUser(userId)
+
+        // Observe the LiveData from the ViewModel and update the UI accordingly
+        viewModel.user.observe(this) { user ->
+            // Update the UI with the user data
+            textViewUserName.text = user.name
+            textViewUserEmail.text = user.email
+        }
+    }
+}
+    
+
+ViewModel (Presentation Layer):-
+
+    import androidx.lifecycle.LiveData
+    import androidx.lifecycle.MutableLiveData
+    import androidx.lifecycle.ViewModel
+
+    class UserViewModel(private val userRepository: UserRepository) : ViewModel() {
+    
+    private val _user = MutableLiveData<User>()
+    val user: LiveData<User> get() = _user
+
+    fun loadUser(userId: Int) {
+        // Simulated asynchronous data retrieval
+        val fetchedUser = userRepository.getUser(userId)
+        _user.value = fetchedUser
+    }
+}
+
+
+
 34. What is Gradle in android?
 
     A gradle is a automated tool used in android development. It provides a flexible and automated tooling system for compiling the code, updating                         dependencies,running tasks, generating apks.Gradle uses Groovy or Kotlin as its scripting language and offers extensive customization options.
