@@ -1303,7 +1303,23 @@ It is commonly used for scenarios where components like services in one applicat
     4. Data Classes:- kotlin introduces data classes which are used to hold data and automatically generates useful methods like equals(), hashCode(), toString().<br>
 
 
+    88. Difference between primary and seconday constructor?
 
+primary Constructor is the part of header after the class name, and it can include the property declarations
+
+class person(val name: String){
+
+}
+
+Seconday constructor is defined using constructor keyword and are placed inside the class body.
+
+
+class person(val name: String){
+    //primary constroctor parameter initialize properties directly
+    constructor(nam:String){
+        //secondary constructor delegate the primary constroctor like it can give the defalut value as zero 
+    }
+}
 
    
 
