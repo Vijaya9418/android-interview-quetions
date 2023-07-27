@@ -1221,6 +1221,11 @@ Video capture: Save video and audio.<br>
                     }
                 }
 
+                
+86. What is AIDL?
+
+It stands for Android Interface Definition language. It is a technolofy used in android application to facilitate communication between different processes or components runing in separate applications or even with different devices. It is primary used to create and define the interface for interprocess communication in android.
+It is commonly used for scenarios where components like services in one application need to be accessed or utilized by components in another application. Which is useful in implementing client server , inter app communication, sharing data between applications.
 
 
 
