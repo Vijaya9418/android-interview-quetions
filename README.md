@@ -216,14 +216,21 @@
     
     An exception is an event that occurs during the execution of a program that disrupts the original flow of a program.Exceptions are use to handle, errors,              exception conditions. The java language provides build-in handling exception mechanism to deal with this type of situation.<br>
     
-    Exception Hierarchy:
+    Exception Hierarchy:<br>
       Exceptions in Java are organized in a hierarchical structure, with the base class being java.lang.Throwable.
       Throwable has two main subclasses: Exception and Error.
+    
+      Checked Exceptions:<br>
+       Checked exceptions are exceptions that the compiler requires the developer to handle explicitly. If a method can throw a checked exception, the developer        needs to either catch the exception using a try-catch block or declare the exception using the "throws" keyword in the method signature.
+    
+    Unchecked Exceptions:<br>
+    Unchecked exceptions, also known as runtime exceptions, are exceptions that the compiler does not require the developer to handle explicitly. These              exceptions are subclasses of RuntimeException, and they typically indicate programming errors or unexpected issues that can occur during the runtime of an       Android application. Examples of unchecked exceptions include NullPointerException, IndexOutOfBoundsException, and IllegalStateException.
+
 
     Exception Handling:
 
       Exception handling is the process of catching and handling exceptions to prevent program termination and provide meaningful feedback to the user.
-      The try-catch-finally block is used to handle exceptions. The try block contains the code that may throw an exception, the catch block catches and handles the         exception, and the finally block is executed regardless of whether an exception occurs or not.
+      The try-catch-finally block is used to handle exceptions. The try block contains the code that may throw an exception, the catch block catches and handles       the exception, and the finally block is executed regardless of whether an exception occurs or not.
 
 27. Sort the list of elements using bubble sort?
     
