@@ -1338,6 +1338,16 @@ class person(val name: String){
     }
 }
 
+39. How many types of launcing modes are there?
+
+   Standard (Default) Launch Mode: This is the default launch mode. Each time you start an activity, a new instance of the activity is created and placed on top of the activity stack. If the activity already exists in the stack, a new instance of the activity will be created on top of the existing one. This is the most common launch mode.
+
+SingleTop: In this mode, if the activity being launched is already at the top of the task stack, a new instance will not be created. Instead, onNewIntent() will be called, allowing you to handle the new intent without creating a new instance of the activity. If the activity is not at the top of the stack, a new instance will be created as usual.
+
+SingleTask: In this mode, only one instance of the activity can exist in the task stack. If the activity is launched and already exists in the stack, all the activities on top of it will be removed, and the existing instance will be brought to the front with a call to onNewIntent(). If the activity is not in the stack, a new instance will be created.
+
+SingleInstance: This mode is similar to SingleTask, but it's even more restrictive. The activity is placed in a separate task, and only one instance of the activity can exist in the whole system. If the activity is launched while an instance already exists, the existing instance will be brought to the front with a call to onNewIntent().
+
    
 
 
