@@ -4,7 +4,7 @@
 
    Android is an operating system specifically designed for mobile and tab applications, its a kind of software stack for mobile applications which is developed by google.
    It is a linux kernel and provide a framework for devlopers to develop the android applications and softwares that can run on android powered devices.
-
+   
 
 3. What is android framework?
 
