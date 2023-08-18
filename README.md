@@ -96,6 +96,8 @@
    Bound Service:- this is a service when multiple component need to interact with a service, typically bindService() method.<br>
    When all the components unbind from the service, the service is destroyed and stopped.
 
+   Android also introduced the concept of Foreground Services, which is a special type of started service that has a higher priority and is designed to perform tasks that the user is actively aware of. Foreground services show a persistent notification to inform the user that the service is running, preventing the system from terminating the service due to memory constraints.
+
 
 11. What are the types of content providers?
     
